@@ -1,10 +1,12 @@
-﻿@{
+﻿@model HW3PRO.Models.PersonModel
+
+@{
     ViewData["Title"] = "Person information";
 }
 
 <h1>PErson information</h1>
-<p>Name: Jack Sparrov</p>
+<p>Name: @Model.Name</p>
 <p>Photo:</p>
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdisney.fandom.com%2Fwiki%2FJack_Sparrow&psig=AOvVaw3e3dXIYQ75LRkmjve-7Xhd&ust=1729842516844000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjhl9fDpokDFQAAAAAdAAAAABAI" alt="Avatar" />
-<p>Number of Group: P7</p>
-<p>Short info:I'm studying to be a pirate at "Blackbeard University".</p>
+<img src="@Model.PhotoUrl" alt="Avatar" />
+<p>Number of Group: @Model.GroupNumber</p>
+<p>Short info: @Model.ShortInfo</p>

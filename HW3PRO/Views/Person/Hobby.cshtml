@@ -1,7 +1,9 @@
-﻿@{
+﻿@model HW3PRO.Models.PersonModel
+
+@{
     ViewData["Title"] = "Hobby";
 }
 
 <h1>Hobby</h1>
-<p>Name: Jack Sparrow</p>
-<p>Hobby: I like to capture ships and hold seaports.</p>
+<p>Name: @Model.Name</p>
+<p>Hobby: @Model.Hobby</p>
